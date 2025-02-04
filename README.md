@@ -35,6 +35,8 @@ Desde esta ventana se puede descargar la documentación de la revista, haciendo 
 
 
 
+Este proyecto cuenta con licencia conforme a los términos de la licencia MIT
+
 
 
 
