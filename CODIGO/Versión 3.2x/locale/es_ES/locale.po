@@ -1,0 +1,91 @@
+# Plugin messages
+msgid "plugins.generic.calidadfecyt.displayName"
+msgstr "Calidad FECYT"
+
+msgid "plugins.generic.calidadfecyt.description"
+msgstr "Complemento desarrollado para versiones OJS 3.2x que automatiza la descarga de "
+"documentación requerida por la Fundación Española para la Ciencia y Tecnología "
+"en los procesos de acreditación para la obtención y/o renovación del sello de calidad FECYT. "
+"\n<br/>"
+"Más información en <a href=\"https://calidadrevistas.fecyt.es\" target="_blank">https://calidadrevistas.fecyt.es</a>"
+
+msgid "plugins.generic.calidadfecyt.export.all"
+msgstr "Exportación conjunta"
+
+msgid "plugins.generic.calidadfecyt.export.single"
+msgstr "Exportaciones individuales"
+
+msgid "plugins.generic.calidadfecyt.exportAll"
+msgstr "Exportar"
+
+msgid "plugins.generic.calidadfecyt.exportAll.description"
+msgstr "Exportar todos los ficheros-documentación"
+
+# TEMPLATE MESSAGES for each export class
+# msgid "plugins.generic.calidadfecyt.export.xxxxx"
+# msgstr "Export xxxxx"
+#
+# msgid "plugins.generic.calidadfecyt.export.xxxx.description"
+# msgstr "Export xxxxx description"
+#
+
+msgid "plugins.generic.calidadfecyt.export.About"
+msgstr "Exportar"
+
+msgid "plugins.generic.calidadfecyt.export.About.description"
+msgstr "Exportar contenidos Acerca de"
+
+msgid "plugins.generic.calidadfecyt.export.CountArticles"
+msgstr "Exportar"
+
+msgid "plugins.generic.calidadfecyt.export.CountArticles.description"
+msgstr "Exportar documentación artículos"
+
+# DataAuthors
+msgid "plugins.generic.calidadfecyt.export.DataAuthors"
+msgstr "Exportar"
+
+msgid "plugins.generic.calidadfecyt.export.DataAuthors.description"
+msgstr "Exportar datos de autor"
+
+# DataReviewers
+msgid "plugins.generic.calidadfecyt.export.DataReviewers"
+msgstr "Exportar"
+
+msgid "plugins.generic.calidadfecyt.export.DataReviewers.description"
+msgstr "Exportar datos de revisor"
+
+# Issues
+msgid "plugins.generic.calidadfecyt.export.Issues"
+msgstr "Exportar"
+
+msgid "plugins.generic.calidadfecyt.export.Issues.description"
+msgstr "Exportar documentación números"
+
+# JournalIdentity
+msgid "plugins.generic.calidadfecyt.export.JournalIdentity"
+msgstr "Exportar"
+
+msgid "plugins.generic.calidadfecyt.export.JournalIdentity.description"
+msgstr "Exportar datos de identificación de la revista"
+
+# SubmissionInfo
+msgid "plugins.generic.calidadfecyt.export.SubmissionInfo"
+msgstr "Exportar"
+
+msgid "plugins.generic.calidadfecyt.export.SubmissionInfo.description"
+msgstr "Exportar información de la pagina de envíos"
+
+# URLs
+msgid "plugins.generic.calidadfecyt.export.URLs"
+msgstr "Exportar"
+
+msgid "plugins.generic.calidadfecyt.export.URLs.description"
+msgstr "Exportar URLs"
+
+# Editorial
+msgid "plugins.generic.calidadfecyt.export.editorial"
+msgstr "Exportación flujo editorial"
+
+msgid "plugins.generic.calidadfecyt.export.editorial.description"
+msgstr "Exportar flujo editorial del envío seleccionado"
