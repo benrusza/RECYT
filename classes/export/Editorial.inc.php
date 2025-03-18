@@ -5,6 +5,7 @@ namespace CalidadFECYT\classes\export;
 use CalidadFECYT\classes\abstracts\AbstractRunner;
 use CalidadFECYT\classes\interfaces\InterfaceRunner;
 use CalidadFECYT\classes\utils\ZipUtils;
+import('lib.pkp.classes.submission.SubmissionComment');
 
 class Editorial extends AbstractRunner implements InterfaceRunner {
 
@@ -47,13 +48,22 @@ class Editorial extends AbstractRunner implements InterfaceRunner {
 
     public function getNameMethod($method)
     {
-        switch ($method) {
-            case SUBMISSION_REVIEW_METHOD_OPEN:
-                return 'Abrir';
-            case SUBMISSION_REVIEW_METHOD_BLIND:
-                return 'Ciego';
-            case SUBMISSION_REVIEW_METHOD_DOUBLEBLIND:
-                return 'Doble ciego';
+
+    define('SUBMISSION_REVIEW_METHOD_BLIND', 1);
+    define('SUBMISSION_REVIEW_METHOD_DOUBLEBLIND', 2);
+    define('SUBMISSION_REVIEW_METHOD_ANONYMOUS', 1);
+    define('SUBMISSION_REVIEW_METHOD_DOUBLEANONYMOUS', 2);
+    define('SUBMISSION_REVIEW_METHOD_OPEN', 3);
+
+    switch ($method) { 
+        case SUBMISSION_REVIEW_METHOD_OPEN:
+            return 'Abrir';
+        case SUBMISSION_REVIEW_METHOD_BLIND:
+        case SUBMISSION_REVIEW_METHOD_ANONYMOUS:
+            return 'Ciego';
+        case SUBMISSION_REVIEW_METHOD_DOUBLEBLIND:
+        case SUBMISSION_REVIEW_METHOD_DOUBLEANONYMOUS:
+            return 'Doble ciego';
             default:
                 return '';
         }
@@ -199,8 +209,8 @@ class Editorial extends AbstractRunner implements InterfaceRunner {
 			fputcsv($file, $columns);
         }
 
-        rewind($memoryFile);
-        $csvContent = stream_get_contents($memoryFile);
+        rewind($file);
+        $csvContent = stream_get_contents($file);
         fclose($file);
     }
 
